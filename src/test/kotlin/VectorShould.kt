@@ -75,8 +75,16 @@ class VectorShould {
     }
 
     @Test
-    internal fun `calculate cross product of two vectors`() {
+    internal fun `calculate cross product of two of the same vector`() {
         val result = Vector(0,0,0)
+        assertEquals(result, vectorA.cross(vectorB))
+    }
+
+    @Test
+    internal fun `calculate cross product of two different vectors`() {
+        val result = Vector(-3,6,-3)
+        vectorA = Vector(2, 3, 4)
+        vectorB = Vector(5, 6, 7)
         assertEquals(result, vectorA.cross(vectorB))
     }
 }
