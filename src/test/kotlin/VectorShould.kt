@@ -51,4 +51,10 @@ class VectorShould {
     internal fun `return true if vectors are equal`() {
         assertTrue(vectorA == vectorB)
     }
+
+    @Test
+    internal fun `add two vectors together`() {
+        val sum = Vector(2, 4, 6)
+        assertEquals(sum, vectorA + vectorB)
+    }
 }

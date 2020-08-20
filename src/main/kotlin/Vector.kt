@@ -38,4 +38,8 @@ class Vector {
         val rhs = other as Vector
         return (this.x == rhs.getX() && this.y == rhs.getY() && this.z == rhs.getZ())
     }
+
+    operator fun plus(addend: Vector): Vector {
+        return Vector(this.x + addend.getX(), this.y + addend.getY(), this.z + addend.getZ())
+    }
 }
