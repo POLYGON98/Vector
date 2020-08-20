@@ -21,4 +21,10 @@ class VectorShould {
         val vector = Vector(1, 2, 3)
         assertArrayEquals(arrayOf(1, 2, 3), vector.toA())
     }
+
+    @Test
+    internal fun `return array representation of 3d vector given array parameter`() {
+        val vector = Vector(arrayOf(1, 2, 3))
+        assertArrayEquals(arrayOf(1, 2, 3), vector.toA())
+    }
 }
