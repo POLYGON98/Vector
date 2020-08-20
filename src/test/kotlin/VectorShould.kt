@@ -32,4 +32,9 @@ class VectorShould {
     internal fun `return array representation of 3d vector given array parameter`() {
         assertArrayEquals(arrayOf(1, 2, 3), vectorB.toA())
     }
+
+    @Test
+    internal fun `return x value`() {
+        assertEquals(1, vectorA.getX())
+    }
 }

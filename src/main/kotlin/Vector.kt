@@ -22,4 +22,8 @@ class Vector {
         return arrayOf(x, y, z)
     }
 
+    fun getX(): Int {
+        return x
+    }
+
 }
