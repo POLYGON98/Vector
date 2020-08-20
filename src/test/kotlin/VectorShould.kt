@@ -63,4 +63,9 @@ class VectorShould {
         val difference = Vector(0, 0, 0)
         assertEquals(difference, vectorA - vectorB)
     }
+
+    @Test
+    internal fun `calculate magnitude of a vector`() {
+        assertEquals(3.74, vectorA.magnitude(), 0.01)
+    }
 }

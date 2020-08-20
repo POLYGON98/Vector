@@ -1,3 +1,5 @@
+import kotlin.math.sqrt
+
 class Vector {
     private var x: Int = 0
     private var y: Int = 0
@@ -45,5 +47,9 @@ class Vector {
 
     operator fun minus(subtrahend: Vector): Vector {
         return Vector(this.x - subtrahend.getX(), this.y - subtrahend.getY(), this.z - subtrahend.getZ())
+    }
+
+    fun magnitude(): Double {
+        return sqrt((this.x * this.x) + (this.y * this.y) + (this.z * this.z).toDouble())
     }
 }
