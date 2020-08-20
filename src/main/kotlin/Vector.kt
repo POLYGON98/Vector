@@ -52,4 +52,8 @@ class Vector {
     fun magnitude(): Double {
         return sqrt((this.x * this.x) + (this.y * this.y) + (this.z * this.z).toDouble())
     }
+
+    fun dot(other: Vector): Int {
+        return (this.x * other.getX()) + (this.y * other.getY()) + (this.z * other.getZ())
+    }
 }

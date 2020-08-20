@@ -68,4 +68,9 @@ class VectorShould {
     internal fun `calculate magnitude of a vector`() {
         assertEquals(3.74, vectorA.magnitude(), 0.01)
     }
+
+    @Test
+    internal fun `calculatd dot product of 2 vectors`() {
+        assertEquals(14, vectorA.dot(vectorB))
+    }
 }
