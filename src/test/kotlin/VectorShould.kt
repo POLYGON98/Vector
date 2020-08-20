@@ -37,4 +37,9 @@ class VectorShould {
     internal fun `return x value`() {
         assertEquals(1, vectorA.getX())
     }
+
+    @Test
+    internal fun `return y value`() {
+        assertEquals(2, vectorA.getY())
+    }
 }

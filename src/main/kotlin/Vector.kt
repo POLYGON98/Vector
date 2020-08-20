@@ -26,4 +26,8 @@ class Vector {
         return x
     }
 
+    fun getY(): Int {
+        return y
+    }
+
 }
