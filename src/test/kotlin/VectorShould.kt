@@ -70,7 +70,13 @@ class VectorShould {
     }
 
     @Test
-    internal fun `calculatd dot product of 2 vectors`() {
+    internal fun `calculate dot product of 2 vectors`() {
         assertEquals(14, vectorA.dot(vectorB))
+    }
+
+    @Test
+    internal fun `calculate cross product of two vectors`() {
+        val result = Vector(0,0,0)
+        assertEquals(result, vectorA.cross(vectorB))
     }
 }

@@ -56,4 +56,11 @@ class Vector {
     fun dot(other: Vector): Int {
         return (this.x * other.getX()) + (this.y * other.getY()) + (this.z * other.getZ())
     }
+
+    fun cross(other: Vector): Vector {
+        val resultX = this.y * other.getZ() - this.z * other.getY()
+        val resultY = this.z * other.getX() - this.x * other.getZ()
+        val resultZ = this.x * other.getY() - this.y * other.getX()
+        return Vector(resultX, resultY, resultZ)
+    }
 }
