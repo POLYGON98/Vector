@@ -57,4 +57,10 @@ class VectorShould {
         val sum = Vector(2, 4, 6)
         assertEquals(sum, vectorA + vectorB)
     }
+
+    @Test
+    internal fun `subtract one vector from another`() {
+        val difference = Vector(0, 0, 0)
+        assertEquals(difference, vectorA - vectorB)
+    }
 }

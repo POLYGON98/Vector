@@ -42,4 +42,8 @@ class Vector {
     operator fun plus(addend: Vector): Vector {
         return Vector(this.x + addend.getX(), this.y + addend.getY(), this.z + addend.getZ())
     }
+
+    operator fun minus(subtrahend: Vector): Vector {
+        return Vector(this.x - subtrahend.getX(), this.y - subtrahend.getY(), this.z - subtrahend.getZ())
+    }
 }
