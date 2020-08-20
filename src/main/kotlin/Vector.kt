@@ -1,4 +1,19 @@
-class Vector(private val x: Int, private val y: Int, private val z: Int) {
+class Vector {
+    private var x: Int = 0
+    private var y: Int = 0
+    private var z: Int = 0
+
+    constructor(x: Int, y: Int, z: Int) {
+        this.x = x
+        this.y = y
+        this.z = z
+    }
+    constructor(input: Array<Int>) {
+        x = input[0]
+        y = input[1]
+        z = input[2]
+    }
+
     fun toS(): String {
         return "<$x, $y, $z>"
     }
