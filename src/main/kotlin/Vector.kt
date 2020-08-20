@@ -30,4 +30,8 @@ class Vector {
         return y
     }
 
+    fun getZ(): Int {
+        return z
+    }
+
 }
