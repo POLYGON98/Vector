@@ -34,4 +34,8 @@ class Vector {
         return z
     }
 
+    override fun equals(other: Any?): Boolean {
+        val rhs = other as Vector
+        return (this.x == rhs.getX() && this.y == rhs.getY() && this.z == rhs.getZ())
+    }
 }

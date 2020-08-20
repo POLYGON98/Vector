@@ -1,5 +1,4 @@
-import org.junit.jupiter.api.Assertions.assertArrayEquals
-import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 
@@ -46,5 +45,10 @@ class VectorShould {
     @Test
     internal fun `return z value`() {
         assertEquals(3, vectorA.getZ())
+    }
+
+    @Test
+    internal fun `return true if vectors are equal`() {
+        assertTrue(vectorA == vectorB)
     }
 }
